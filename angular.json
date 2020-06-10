@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -117,8 +120,16 @@
               "devServerTarget": "myPortfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "myPortfolio"
+    }
+  },
+  "defaultProject": "myPortfolio",
+  "cli": {
+    "analytics": "e3e9b16b-d517-48e5-841c-0ea06f4ef1f0"
+  }
 }

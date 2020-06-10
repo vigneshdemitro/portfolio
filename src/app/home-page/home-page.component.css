@@ -1,0 +1,13 @@
+.body_bg{
+    background-image: url("../../assets/images/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:767px){
+    .body_bg{
+        background-image: url("../../assets/images/bg.jpg");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
