@@ -1,3 +1,11 @@
 .body-bg{
-    background-color: goldenrod;
+  background-color: whitesmoke;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (max-width:767px) {
+  .body-bg{
+    background-color: whitesmoke;
+  }
 }
