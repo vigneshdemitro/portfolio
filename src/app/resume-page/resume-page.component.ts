@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ViewEncapsulation, Inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation, Inject, Attribute } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -18,5 +18,6 @@ export class ResumePageComponent implements OnInit,OnDestroy {
   ngOnDestroy() {
     this._document.body.classList.remove('body-bg');
   }
+
 
 }

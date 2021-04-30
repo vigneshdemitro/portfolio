@@ -1,5 +1,5 @@
 .body-bag{
-    background-image: url("../../assets/images/a-bg.jpg");
+    background-image: url("../../assets/images/a-bg.jpeg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,6 +8,6 @@
 @media only screen and (max-width:767px) {
     .body-bag{
         background-image: none;
-        background-color: darkturquoise;
+        background-color: khaki;
     }
 }

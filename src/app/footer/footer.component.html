@@ -1,0 +1,18 @@
+<footer class="footer-panel fixed-bottom mt-auto">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-around">
+      <img src="assets/images/git.png" alt="git" onclick="window.open('https://github.com/vigneshdemitro','mywindow')"
+        style="cursor:pointer;" width="40px" height="40px">
+      <img src="assets/images/in.png" alt="linkedin"
+        onclick="window.open('https://www.linkedin.com/in/vigneshwarpasupathi','mywindow')" style="cursor:pointer;"
+        width="35px" height="35px">
+      <img src="assets/images/medium.png" alt="linkedin"
+        onclick="window.open('https://medium.com/@vigneshdemitro','mywindow')" style="cursor:pointer;" width="35px"
+        height="35px">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex"
+      [ngClass]="[isMinWidth ? 'justify-content-center' : 'justify-content-end']" (window:resize)="onWindowChange()" id="copyright">
+      <span>Copyright © Vigneshwar Pasupathi</span>
+    </div>
+  </div>
+</footer>
