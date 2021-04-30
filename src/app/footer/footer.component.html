@@ -1,4 +1,4 @@
-<footer class="footer-panel fixed-bottom mt-auto">
+<footer class="footer-panel fixed-bottom mt-auto" (mouseover)="toggleCopyright()" (mouseout)="toggleCopyright()">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-around">
       <img src="assets/images/git.png" alt="git" onclick="window.open('https://github.com/vigneshdemitro','mywindow')"
@@ -11,8 +11,8 @@
         height="35px">
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 d-flex"
-      [ngClass]="[isMinWidth ? 'justify-content-center' : 'justify-content-end']" (window:resize)="onWindowChange()" id="copyright">
-      <span>Copyright © Vigneshwar Pasupathi</span>
+      [ngClass]="[isMinWidth ? 'justify-content-center' : 'justify-content-end']" (window:resize)="onWindowChange()">
+      <span id="copyright" [ngClass]="[isCopyright ? 'copyright' : '']">Copyright © Vigneshwar Pasupathi</span>
     </div>
   </div>
 </footer>

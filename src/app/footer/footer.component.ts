@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, Inject } from '@angular/core';
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private _document) { }
 
   isMinWidth;
+  isCopyright = false;
 
   ngOnInit(): void {
     this.isMinWidth = window.innerWidth < 767;
@@ -17,6 +19,10 @@ export class FooterComponent implements OnInit {
 
   onWindowChange(): void {
     this.isMinWidth = window.innerWidth < 767;
+  }
+
+  toggleCopyright(): void {
+    this.isCopyright = !this.isCopyright; console.log(this.isCopyright)
   }
 
 }
