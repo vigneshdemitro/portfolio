@@ -18,10 +18,12 @@ body{
 	transform: translate(-50%,-50%);
 }
 .hefont{
-	font-family: 'Franklin Gothic Medium';
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: darkred;
+	font-weight: bolder;
 }
 .hfont{
-	font-family: fantasy;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cfont{
 	font-family: sans-serif;
@@ -34,6 +36,11 @@ body{
 	font-size: 15px;
 	font-weight: bold;
 	font-style: normal;
+}
+.afont{
+	font-family: monospace;
+	font-size: 15px;
+	font-style: italic;
 }
 ul{
 	list-style: none;
