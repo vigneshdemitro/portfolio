@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   }
 
   toggleCopyright(): void {
-    this.isCopyright = !this.isCopyright; console.log(this.isCopyright)
+    this.isCopyright = !this.isCopyright;
   }
 
 }
