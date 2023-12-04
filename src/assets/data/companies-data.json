@@ -1,0 +1,49 @@
+[
+  {
+    "companyName": "Acubetech Solutions Pvt Ltd",
+    "positions": [
+      {
+        "title": "Senior Software Engineer",
+        "year": "From FEB'22",
+        "description": "Working as a Senior Software Engineer creating reusable react components, building APIs and mentoring juniors to write clean code."
+      }
+    ],
+    "techStacks": ["React.js", "AWS Amplify / Lambda", "Node.js", "PostgreSQL / MySQL"]
+  },
+  {
+    "companyName": "Macroid App Services Pvt Ltd",
+    "positions": [
+      {
+        "title": "Senior Full Stack Web Developer",
+        "year": "SEP'21 - FEB'22",
+        "description": "Worked as a Senior Full Stack Web Developer in a finance domain(confidential) for a UK based client."
+      },
+      {
+        "title": "Full Stack Web Developer",
+        "year": "JUL'20 - SEP'21",
+        "description": "Worked as a Full Stack Web Developer in a food delivery app(confidential) for a US based client."
+      }
+    ],
+    "techStacks": ["React.js", "Node.js", "Nest.js", "MongoDB", "AWS EC2"]
+  },
+  {
+    "companyName": "Indigo India Pvt Ltd",
+    "positions": [
+      {
+        "title": "Design Engineer",
+        "year": "JAN'17 - MAR'19",
+        "description": "Worked as a Design Engineer creating detailed drawings for company's wide range of products."
+      }
+    ]
+  },
+  {
+    "companyName": "MS Design House",
+    "positions": [
+      {
+        "title": "Architectural Draftsman",
+        "year": "MAR'16 - NOV'16",
+        "description": "Worked as Architectural Draftsman for Senior Architect for the firm to prepare drawings for the project."
+      }
+    ]
+  }
+]

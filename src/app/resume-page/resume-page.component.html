@@ -7,86 +7,42 @@
       <h3>WORK</h3>
     </div>
     <div class="col-sm-12 col-md-9 col-lg-9 justify-content-center text-center">
-      <div class="hfont m-2">
-        <h4>Macroid App Services Pvt Ltd</h4>
-      </div>
-      <!-- <div> -->
-        <ul class="list-group list-group-flush">
+      <div *ngFor="let company of companiesData">
+        <div class="hfont m-2">
+          <h4>{{company.companyName}}</h4>
+        </div>
+        <ul class="list-group list-group-flush" *ngFor="let position of company.positions">
           <li class="list-group-item bg-transparent">
-            <span class="efont m-2">Sr.Full Stack Web Developer | From Sept'21</span>
-            <p class="cfont m-1">Working as a Senior Full Stack Web Developer in a finance domain
-              (confidential) for a UK based client.
-            </p>
-            <br/>
-            <span class="efont m-2">Full Stack Web Developer | JUL'20-Sept'21</span>
-            <p class="cfont m-1">Worked as a Full Stack Web Developer in a food delivery app
-              (confidential) for a US based client.
-            </p>
+            <span class="efont m-2">{{position.title}} | {{position.year}}</span>
+            <p class="cfont m-1">{{position.description}}</p>
+            <hr *ngIf="position.length>1"/>
           </li>
         </ul>
-      <!-- </div> -->
-      <div class="row m-4 text-center d-flex align-items-center">
-        <div class="col-sm-12 col-md-3 col-lg-3 text-center d-flex align-items-center justify-content-center">
-          <h5>Tech Stack</h5>
+        <div class="row m-4 text-center d-flex align-items-center" *ngIf="company.techStacks">
+          <div class="col-sm-12 col-md-3 col-lg-3 text-center d-flex align-items-center justify-content-center">
+            <h5>Tech Stack</h5>
+          </div>
+          <div class="col-sm-12 col-md-9 col-lg-9 font-weight-bold">
+            <ul class="list-group list-group-horizontal list-group-flush">
+              <li class="list-group-item bg-transparent" *ngFor="let stack of company.techStacks">{{stack}}</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-sm-12 col-md-9 col-lg-9 font-weight-bold">
-          <ul class="list-group list-group-horizontal list-group-flush">
-            <li class="list-group-item bg-transparent">node.js</li>
-            <li class="list-group-item bg-transparent">NestJS</li>
-            <li class="list-group-item bg-transparent">React</li>
-            <li class="list-group-item bg-transparent">MongoDB</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <div class="hfont m-2">
-        <h4>Indigo India</h4>
-      </div>
-      <div class="efont m-2">
-        <p>Design Engineer | JAN'17-MAR'19</p>
-      </div>
-      <div class="cfont m-1">
-        <p>Worked as a Design Engineer creating detailed drawings for company's wide range of products.</p>
-      </div>
-      <hr>
-      <div class="hfont m-2">
-        <h4>MS Design House</h4>
-      </div>
-      <div class="efont m-2">
-        <p>Architectural Draftsman | MAR'16-NOV'16</p>
-      </div>
-      <div class="cfont m-1">
-        <p>Worked as Architectural Draftsman for Senior Architect for the firm to prepare drawings for the
-          project.</p>
+        <hr>
       </div>
     </div>
   </div>
   <hr>
+  <!-- Skills -->
   <div class="row p-3">
     <div class="col-sm-12 col-md-3 col-lg-3 text-center d-flex align-items-center justify-content-center">
       <h3>SKILLS</h3>
     </div>
     <div class="col-sm-12 col-md-9 col-lg-9 font-weight-bold">
-      <ul>
-        <span>NODE JS</span>
-        <li style="width: 100%;height:40px;background-color: grey;" class="mt-4 mb-4">
-          <div style="width: 70%;height:40px;background-color: darkred;"></div>
-        </li>
-        <span>EXPRESS JS</span>
-        <li style="width: 100%;height:40px;background-color: grey;" class="mt-4 mb-4">
-          <div style="width: 70%;height:40px;background-color: darkred;"></div>
-        </li>
-        <span>REACT JS</span>
-        <li style="width: 100%;height:40px;background-color: grey;" class="mt-4 mb-4">
-          <div style="width: 60%;height:40px;background-color: darkred;"></div>
-        </li>
-        <span>HTML</span>
-        <li style="width: 100%;height:40px;background-color: grey;" class="mt-4 mb-4">
-          <div style="width: 50%;height:40px;background-color: darkred;"></div>
-        </li>
-        <span>CSS</span>
-        <li style="width: 100%;height:40px;background-color: grey;" class="mt-4 mb-4">
-          <div style="width: 50%;height:40px;background-color: darkred;"></div>
+      <ul *ngFor="let skill of skillsData">
+        <span>{{skill.title}}</span>
+        <li style="width:100%;height:40px;background-color: grey;" class="mt-4 mb-4">
+          <div [style.width.%]="skill.percentage" style="width:70%;height:40px;background-color: darkred;"></div>
         </li>
       </ul>
     </div>
@@ -104,7 +60,7 @@
         <p>Guvi Geeks Private Ltd, Chennai</p>
       </div>
       <div class="efont m-1">
-        <p>Zen-Class | Jan'20</p>
+        <p>Zen-Class | JAN'20 - APR'20</p>
       </div>
     </div>
   </div>
