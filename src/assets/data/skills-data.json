@@ -1,0 +1,26 @@
+[
+  {
+    "title": "React.js",
+    "percentage": 70
+  },
+  {
+    "title": "Node.js",
+    "percentage": 60
+  },
+  {
+    "title": "Nest.js",
+    "percentage": 40
+  },
+  {
+    "title": "Typescript",
+    "percentage": 50
+  },
+  {
+    "title": "AWS Amplify / Lambda",
+    "percentage": 30
+  },
+  {
+    "title": "AWS",
+    "percentage": 30
+  }
+]
