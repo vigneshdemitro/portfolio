@@ -10,7 +10,7 @@ const routes: Routes = [
   { path : "", component : HomePageComponent, pathMatch : "full"},
   { path : "home", component : HomePageComponent},
   { path : "about", component : AboutPageComponent},
-  { path : "project", component : ProjectPageComponent},
+  // { path : "project", component : ProjectPageComponent}, // disabling project route
   { path : "resume", component : ResumePageComponent}
 ];
 
